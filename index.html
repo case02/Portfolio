@@ -10,51 +10,55 @@
 
 <body>
     <!-- <img src="images/pexels-juan-pablo-serrano-arenas-1242348.jpg" alt="the background photo"> -->
-    <header>
-        <nav class="main-navigation">
-            <div id="title"><a href="/"><span class="h6">Casey Stocker</span></a> <span class="h6">Designer, Developer</span>
+    <main class="layout">
+        <header>
+            <nav class="main-navigation">
+                <div id="title"><a href="/"><span class="h6">Casey Stocker</span></a> <span class="h6">Designer,
+                        Developer</span>
+                </div>
+                <div id="main-menu">
+                    <ul>
+                        <li class="h6"><a href="#about">works</a></li>
+                        <li class="h6"><a href="#work">about</a></li>
+                        <li class="h6"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>    
+            </nav>
+            <img src="images/icon-menu-512.webp" alt="menu icon">
+        </header>
+        <section id="index">
+            <!-- holds the index page  -->
+            <h1>Casey Stocker</h1>
+            <h2 aref=".about">about.</h2>
+            <h2 aref=".projects">projects.</h2>
+            <h2 aref=".contact">contact</h2>
+            <article class="brand-statement">
+                <p>"I am a software engineer with experience working in a variety of industries; GPS and tracking services,
+                    tourism,
+                    teaching, sales, and customer service. Strong problem solver who can adapt to an ever-changing environment,
+                    work well
+                    with a team or independently and am strong in task management skills."</p>
+            </article>
+        </section>
+        <section id="about">
+            <!-- holds the about me page  -->
+            <h2>About</h2>
+            <img src="photo of me" alt="Photo of Casey">
+            <div class="bio">
+                <p>Hi, I'm Casey!</p>
             </div>
-            <div id="main-menu">
-                <ul>
-                    <li class="h6"><a href="#about">works</a></li>
-                    <li class="h6"><a href="#work">about</a></li>
-                    <li class="h6"><a href="#contact">contact</a></li>
-                </ul>
-        </nav>
-        <img src="images/icon-menu-512.webp" alt="menu icon">
-    </header>
-    <section id="index" class="current-page">
-        <!-- holds the index page  -->
-        <h1>Casey Stocker</h1>
-        <h2 aref=".about">about.</h2>
-        <h2 aref=".projects">projects.</h2>
-        <h2 aref=".contact">contact</h2>
-        <article class="brand-statement">
-            <p>"I am a software engineer with experience working in a variety of industries; GPS and tracking services, tourism,
-            teaching, sales, and customer service. Strong problem solver who can adapt to an ever-changing environment, work well
-            with a team or independently and am strong in task management skills."</p>
-        </article>
-    </section>
-    <section id="about" class="hidden-page">
-        <!-- holds the about me page  -->
-        <h2>About</h2> 
-        <img src="photo of me" alt="Photo of Casey">
-        <div class="bio">
-            <p>Hi, I'm Casey!</p>
-        </div>
-    </sextion>
-    <section id="projects" class="hidden-page">
-        <!-- holds the projects page  -->
-        <div class="project">
-
-        </div>
-        <div class="project">
+        </section>
+        <section id="projects">
+            <!-- holds the projects page  -->
+            <div class="project">
         
-        </div>
-        <div class="project">
+            </div>
+            <div class="project">
         
-        </div>
-    </div>
+            </div>
+            <div class="project">
+        </section>
+    </main>
 
     <script type="text/javascript" src="./app.js"></script>
 </body>
