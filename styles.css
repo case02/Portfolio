@@ -1,0 +1,84 @@
+/* Global Styles
+------------------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Styles
+------------------------------------------ */
+
+body {
+    background-color: azure;
+    background-image: url("images/pexels-daniel-absi-952670.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.current-page {
+    margin-right: 5rem;
+    padding: 2rem;
+    height: 80vh;
+    width: 70vw;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+#index {
+    margin-top: 100px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: whitesmoke;
+    opacity: 40%;
+}
+h1{
+    font-size: 200px;
+    line-height: 140px;
+}
+header {
+    position: fixed;
+    top: 0px;
+    left: 28px;
+    right: 28px;
+    z-index: 11;
+    height: 55px;
+    background-color: whitesmoke;
+    display: none;
+    
+}
+
+.brand-statement {
+    background-color: whitesmoke;
+    opacity: 60%;
+    max-width: 600px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 11px;
+    display: none;
+}
+ 
+.hidden-page {
+    display: none;
+}
+
+
+ @media (max-width: 500px) {
+    #index {
+    margin-top: 100px;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: whitesmoke;
+    opacity: 40%;
+    }
+    
+     h1 {
+         font-size: 36px;
+         padding: 5px;
+
+     }
+
+     li {
+         padding: 5px;
+         display: block;
+     }
+ }
