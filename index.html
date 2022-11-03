@@ -11,27 +11,32 @@
 <body>
     <!-- <img src="images/pexels-juan-pablo-serrano-arenas-1242348.jpg" alt="the background photo"> -->
     <main class="layout">
-        <header>
-            <nav class="main-navigation">
-                <div id="title"><a href="/"><span class="h6">Casey Stocker</span></a> <span class="h6">Designer,
-                        Developer</span>
-                </div>
-                <div id="main-menu">
-                    <ul>
-                        <li class="h6"><a href="#about">works</a></li>
-                        <li class="h6"><a href="#work">about</a></li>
-                        <li class="h6"><a href="#contact">contact</a></li>
-                    </ul>
-                </div>    
-            </nav>
-            <img src="images/icon-menu-512.webp" alt="menu icon">
+        <header class="navbar">
+            <ul class="navbar_list">
+                <li class="navbar_item-name">Casey Stocker <span class="" </li>
+
+                <!-- RESUME <li class="navbar_item">
+                    <a class="navbar__link" href="res link" target="_blank" data-target="work">
+                        Resume </a>
+                </li> -->
+                <li class="navbar__item ">
+                    <a href="about " class="navbar__link" data-target="about"> works
+                    </a>
+                </li>
+                <li class="navbar__item ">
+                    <a href="about " class="navbar__link" data-target="about"> about
+                    </a>
+                </li>
+                <li class="navbar__item email">
+                    <a href="mailto:cstocker0212@gmail.com?subject=Hey Let's Chat..." class="navbar__link"
+                        data-target="contact"> contact
+                    </a> 
+                </li>
+            </ul>
         </header>
         <section id="index">
             <!-- holds the index page  -->
-            <h1>Casey Stocker</h1>
-            <h2 aref=".about">about.</h2>
-            <h2 aref=".projects">projects.</h2>
-            <h2 aref=".contact">contact</h2>
+            <h1><span class="creative">creative<br></span>DESIGNER<span class="and">&<br></span>DEVELOPER</h1>
             <article class="brand-statement">
                 <p>"I am a software engineer with experience working in a variety of industries; GPS and tracking services,
                     tourism,
@@ -40,25 +45,53 @@
                     with a team or independently and am strong in task management skills."</p>
             </article>
         </section>
-        <section id="about">
-            <!-- holds the about me page  -->
-            <h2>About</h2>
-            <img src="photo of me" alt="Photo of Casey">
-            <div class="bio">
-                <p>Hi, I'm Casey!</p>
-            </div>
-        </section>
-        <section id="projects">
+        <section id="featured-work" class="projects">
             <!-- holds the projects page  -->
-            <div class="project">
-        
-            </div>
-            <div class="project">
-        
-            </div>
-            <div class="project">
+            <ul id="project-list" class="project-list">
+                <li class="project-card project-card_right">
+                    <a></a>
+                    <div class="is-inview project-card-content">
+                        <h3>project name</h3>
+                        <p><br>project details</p>
+                    </div>
+                </li>
+                <li class="project-card project-card_left">
+                    <a></a>
+                    <div class="is-inview project-card-content">
+                        <h3>project name</h3>
+                        <p><br>project details</p>
+                    </div>
+                </li>
+                <li class="project-card project-card_right">
+                    <a></a>
+                    <div class="is-inview project-card-content">
+                        <h3>project name</h3>
+                        <p><br>project details</p>
+                    </div>
+                </li>
+                <section id="about" class="about">
+            <!-- holds the about me page  -->
+            <article class="about-right">
+                <img class="about-img hide-image" src="">
+            </article>
+            <article class="about-left">
+                <h2>Hi, I'm Casey.</h2>
+                <p class="about-cs">Casey Stocker</p>
+                <p class="about-bio">bio</p>
+            </article>
         </section>
-    </main>
+        <section id="about" class="about">
+            <!-- holds the about me page  -->
+            <article class="about-right">
+                <img class="about-img hide-image" src="">
+            </article>
+            <article class="about-left">
+                <h2>Hi, I'm Casey.</h2>
+                <p class="about-cs">Casey Stocker</p>
+                <p class="about-bio">bio</p>
+            </article>
+        </section>
+    </main> 
 
     <script type="text/javascript" src="./app.js"></script>
 </body>

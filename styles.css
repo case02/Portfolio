@@ -1,6 +1,8 @@
 /* Global Styles
 ------------------------------------------ */
-* {
+*,
+:after,
+:before {
     box-sizing: border-box;
 }
 
@@ -9,36 +11,46 @@
 
 body {
     background-color: azure;
-    background-image: url("images/pexels-daniel-absi-952670.jpg");
+    background-image: url("");
     background-size: cover;
     width: 100vw;
     height: 100vh;
     font-family: nimbus-sans, sans-serif;
 }
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
 main {
     display: block;
 }
-#index {
-    margin-top: 100px;
-    max-width: 90%;
-    max-height: 90%;
-    background-color: whitesmoke;
-    opacity: 40%;
+.navbar {
+    width: 100%;
+}
+ul {
+    display: flex;
+    border-bottom: 1px solid #777;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+    list-style: none;
+}
+.navbar_item-name {
+    flex:20;
+}
+li {
+    flex: 1;
+}
+li a {
+    text-decoration: none;
+    color:black;
 }
 h1{
-    font-size: 200px;
+    font-size: 100px;
     line-height: 140px;
 }
-header {
-    position: fixed;
-    top: 0px;
-    left: 28px;
-    right: 28px;
-    z-index: 11;
-    height: 55px;
-    background-color: whitesmoke;
-    display: none;
-    
+.header{
+    font-size: 10px;
 }
 
 .brand-statement {
@@ -54,10 +66,19 @@ header {
 
 
  @media (max-width: 500px) {
+    .navbar_item-name {
+            display: none;
+        }
+    #index .creative{
+        font-size: small;
+    }
+    #index .and{
+        font-size: xx-small;
+    }
      h1 {
-         font-size: 36px;
+         font-size:larger;
+         line-height: 12px;
          padding: 5px;
-
      }
 
      li {
