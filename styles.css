@@ -14,7 +14,7 @@ html {
 
 body {
     background-color: rgb(17, 17, 17);
-    background-image: url("");
+    background-image: url("images/pexels-skylar-kang-6044820.jpg");
     background-size: cover;
     font-family: 'nimbus-sans', sans-serif;
 }
@@ -24,11 +24,11 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 2%;
+    width: 100vw;
 }
 section {
     color: whitesmoke;
     height: 100vh;
-    width: 100vw;
 }
 
 /* Nav Bar
@@ -62,8 +62,9 @@ header {
 
 button {
     color: whitesmoke;
-    background: transparent;
+    background: transparent; 
     border: none;
+    cursor: pointer;
 }
 
 
@@ -117,6 +118,13 @@ button {
 #about .name_bio {
     font-size: x-small;
 }
+#about p {
+    padding: 1rem 1rem;
+}
+.about-img {
+    width: 50vh
+}
+
 
 /* Project Section
 ------------------------------------ */

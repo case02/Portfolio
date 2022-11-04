@@ -3,17 +3,12 @@
 // const scroll = new LocomotiveScroll({
 // 	el: document.querySelector('[data-scroll-container]'),
 // 	smooth: true,
-//  multiplier: 10,
+//     multiplier: 1,
 // });
 
-const aboutMesection = document.querySelector('#about')
-const aboutLink = document.querySelector('.navbar__item--about')
-const worksLink = document.querySelector('.navbar__item--works')
-const contactLink = document.querySelector('.navbar__item--contact')
+const aboutMeSection = document.querySelector('#about')
+const aboutButton = document.querySelector('.about')
+const worksButton = document.querySelector('.works')
+const contactButton = document.querySelector('.contact')
 
-// document
-// 	.getElementsById('about')
-// 	.addEventListener('scroll', () => {
-// 		const scrolled = document.getElementsById('about').scrollTop;
-// 		console.log(scrolled);
-// 	});
+aboutButton.addEventListener('click', document.getElementById('about').scrollTo({behavior: 'smooth'}))
