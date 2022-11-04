@@ -1,0 +1,155 @@
+/* Global Styles
+------------------------------------------ */
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Element Styles
+------------------------------------------ */
+
+body {
+    background-color: rgb(17, 17, 17);
+    background-image: url("images/pexels-skylar-kang-6044820.jpg");
+    background-size: cover;
+    font-family: 'nimbus-sans', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    max-width: 100vw;
+}
+section {
+    color: whitesmoke;
+    max-height: 100vh;
+}
+
+/* Nav Bar
+------------------------------------ */
+header {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    font-size: small;
+    color: whitesmoke;
+    border-bottom: 1px solid #777;
+    align-items: center;
+    padding: .5rem .5rem;
+}
+
+.navbar_list {
+    display: flex;
+}
+
+.top_title {
+    visibility: hidden;
+}
+
+.navbar_item-name {
+    flex: 1;
+}
+
+li {
+    flex: .2;
+    list-style: none;
+    justify-content: space-between;
+}
+li a{
+    color: whitesmoke;
+    background: transparent; 
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* Index Section
+------------------------------------ */
+#index {
+    color: whitesmoke;
+    opacity: .98;
+    align-items: center;
+    margin: auto;
+}
+.space{
+    visibility: hidden;
+}
+#index h1 {
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    padding: 20% auto;
+    line-height: 45px;
+    transform: scaleY(1.5);
+   
+}
+.creative {
+    font-family: 'Lobster', cursive;
+    font-size: small;
+    text-align: left;
+}
+.and {
+    font-size: medium;
+    font-family: 'Lobster', cursive;
+}
+.brand-statement {
+    font-size: small;
+    margin: 100px auto;
+    width: 300px;
+}
+.contact_button {
+    background: transparent;
+    border: 1px solid white;
+    color: whitesmoke;
+    border-radius: 20px;
+    float: right;
+    opacity: .7;
+}
+
+/* About Section
+------------------------------------ */
+#about {
+    margin: auto;
+}
+#about .name_bio {
+    font-size: x-small;
+}
+#about p {
+    padding: 1rem 1rem;
+}
+.about-img {
+    width: 50vh
+}
+
+
+/* Project Section
+------------------------------------ */
+#featured-work {
+    margin: auto;
+}
+#project-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.project-card {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+ul{
+    padding: 0;
+}
+li img{
+    max-width: 100%;
+    paddin
+}
+li a {
+    max-width: 25%;
+}
