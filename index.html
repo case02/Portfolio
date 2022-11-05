@@ -1,126 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Lobster&family=Pacifico&family=Raleway&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Henny+Penny&family=Lobster&family=Pacifico&family=Raleway&display=swap');
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casey Stocker</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Londrina+Shadow&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Henny+Penny&family=Lobster&family=Pacifico&family=Prompt&family=Raleway&display=swap');
+</style>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <!-- <img src="images/pexels-juan-pablo-serrano-arenas-1242348.jpg" alt="the background photo"> -->
-    <main data-scroll-container class="layout">
-        <header class="navbar">
-            <nav class="navbar_list">
-                <p class="navbar_item-name">CASEY STOCKER<span class="top_title">  DESIGNER | DEVELOPER</span></p>
-
-                <!-- RESUME <li class="navbar_item">
-                    <a class="navbar__link" href="res link" target="_blank" data-target="work">
-                        Resume </a>
-                </li> -->
-                <li class="navbar__item works ">
-                    <a href="#featured-work " class="navbar__link" data-target="about"> works
-                    </a>
-                    
-                </li>
-                <li class="navbar__item about ">
-                    <a href="#about " class="navbar__link" data-target="about"> about
-                    </a>
-                    
-                </li>
-                <li class="navbar__item contact">
-                    <a href="mailto:cstocker0212@gmail.com?subject=Hey Let's Chat..." class="navbar__link"
-                        data-target="contact"> contact
-                    </a> 
-                    
-                </li>
-            </nav>
-        </header>
-        <section data-scroll-section id="index">
-            <!-- holds the index page  -->
+    <header>
+       <nav class="navbar" >
+        <p class="header-name">CASEY STOCKER</p>
+        <button>about</button>
+        <button>works</button>
+        <button>contact</button>
+       </nav>
+    </header>
+    <section id="the_index" class="in-view_section">
+        <div class="index-div typography">
             <h1><span class="creative">creative<br></span>DESIGNER<span class="and"> &<br></span>DEVELOPER</h1>
-            <article class="brand-statement">
-                <p><span class="space">//////////////////////////////</span>I AM A NEW DEVELOPER BASED OUT OF SAN DIEGO, CALIFORNIA. I LOVE MINIMAL AND EFFIECENT DESIGN. I LOVE NATURE, READING AND ART.</p>
-                <button class="contact_button">CONTACT ME</button>
-            </article>
-        </section>
-        <section data-scroll-section id="about" class="about">
-            <!-- holds the about me page  -->
-            <article class="about-right">
-                <img class="about-img hide-image" src="images/pexels-daniel-absi-952670.jpg">
-            </article>
-            <article class="about-left">
-                <h2>Hi, I'm Casey<br><span class="name_bio">CASEY STOCKER</span></h2>
-                <p class="about-bio">I am a
+        </div>
+        <div class="index-div brand-statement">
+            <p><span class="space">//////////////////////////////</span>I AM A NEW DEVELOPER BASED OUT OF SAN DIEGO, CALIFORNIA.
+                I LOVE MINIMAL AND EFFIECENT DESIGN. I LOVE NATURE, READING AND ART.</p>
+            <button class="contact_button">CONTACT ME</button>
+            </div>
+    </section>
+    <section id="the_about" class="in-view_section">
+        <article class="about-right">
+            <img class="about-img hide-image" src="images/IMG_1234.jpg" width="450">
+        </article>
+        <article class="about-left">
+            <h2>Hi, I'm Casey<br><span class="name_bio">CASEY STOCKER</span></h2>
+            <p class="about-bio">I am a
                 software engineer with experience working in a variety of industries; GPS and tracking services,
                 tourism,
                 teaching, sales, and customer service. Strong problem solver who can adapt to an ever-changing environment,
                 work well
                 with a team or independently and am strong in task management skills.</p>
-            </article>
-        </section>
-        <section id="the_works" class="in-view_section">
-            <h1>featured works</h1>
-            <h2>designer | developer </h2>
-            <div class="works first-project">
-                <p>project name<span class="place">CA</span><br />
-                    <small>Justin will see you all tomorrow at 9am PT for standups.
-                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
-                        styling
-                        in.
-                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
-                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
-                        Have a great night and remember, indentations are so important, console.log everything, and errors are
-                        your
-                        friend(read
-                        them carefully)!</small>
-                </p>
-            </div>
+        </article>
+    </section>
+    <section id="the_works" class="in-view_section">
+        <h1>featured works</h1>
+        <h2>designer | developer </h2>
+        <div class="works first-project">
+            <p>project name<span class="place">CA</span><br />
+                <small>Justin will see you all tomorrow at 9am PT for standups.
+                    Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
+                    in.
+                    We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                    So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                    Have a great night and remember, indentations are so important, console.log everything, and errors are your
+                    friend(read
+                    them carefully)!</small>
+            </p>
+        </div>
         
-            <div class="works second-project">
-                <p>project name<span class="place">CA</span><br />
-                    <small>Justin will see you all tomorrow at 9am PT for standups.
-                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
-                        styling
-                        in.
-                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
-                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
-                        Have a great night and remember, indentations are so important, console.log everything, and errors are
-                        your
-                        friend(read
-                        them carefully)!</small>
-                </p>
-            </div>
+        <div class="works second-project">
+            <p>project name<span class="place">CA</span><br />
+                <small>Justin will see you all tomorrow at 9am PT for standups.
+                    Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
+                    in.
+                    We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                    So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                    Have a great night and remember, indentations are so important, console.log everything, and errors are your
+                    friend(read
+                    them carefully)!</small>
+            </p>
+        </div>
         
-            <div class="works third-project">
-                <p>project name<span class="place">CA</span><br />
-                    <small>Justin will see you all tomorrow at 9am PT for standups.
-                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
-                        styling
-                        in.
-                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
-                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
-                        Have a great night and remember, indentations are so important, console.log everything, and errors are
-                        your
-                        friend(read
-                        them carefully)!
-                    </small>
-                </p>
+        <div class="works third-project">
+            <p>project name<span class="place">CA</span><br />
+                <small>Justin will see you all tomorrow at 9am PT for standups.
+                    Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
+                    in.
+                    We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                    So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                    Have a great night and remember, indentations are so important, console.log everything, and errors are your
+                    friend(read
+                    them carefully)!
+                </small>
+            </p>
+        </div>
+    </section>
+    <section id="the_contact" class="in-view_section">
+        <div class="footer-text">
+            <h1><span class="lets">LET'S</span><br><span class="connect">CONNECT</span></h1>
+        </div> 
+        <div class="contact-content">
+            <div class="conten-top">
+                <p>DO YOU HAVE A PROJECT IN MIND?</p>
+                <button class="contact_button">CONTACT ME</button>
+                <button class="resume_button">RESUME</button>
             </div>
-        </section>
-        
-    </main> 
+            <div class="content-bottom">
+                <ul class="social">
+                    <li>GITHUB</li>
+                    <li>LINKEDIN</li>
+                    <li>TWITTER</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
     <script>
         $('div').on('click', function () {
             $(this).toggleClass('show-description');
         });
     </script>
-    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
-</html>
