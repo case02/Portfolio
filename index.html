@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Lobster&family=Pacifico&family=Raleway&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Henny+Penny&family=Lobster&family=Pacifico&family=Raleway&display=swap');
@@ -64,40 +65,62 @@
                 with a team or independently and am strong in task management skills.</p>
             </article>
         </section>
-        <section data-scroll-section id="featured-work" class="projects">
-            <!-- holds the projects page  -->
-            <ul id="project-list" class="project-list">
-                <li class="project-card project-card_right">
-                    <a>
-                        <img src="images/pexels-markus-spiske-965345.jpg">
-                    </a>
-                    <div class="is-inview project-card-content">
-                        <h3>project name</h3>
-                        <p><br>project details</p>
-                    </div>
-                </li>
-                <li class="project-card project-card_left">
-                    <a>
-                        <img src="images/pexels-markus-spiske-965345.jpg">
-                    </a>
-                    <div class="is-inview project-card-content">
-                        <h3>project name</h3>
-                        <p><br>project details</p>
-                    </div>
-                </li>
-                <li class="project-card project-card_right">
-                    <a>
-                        <img src="images/pexels-markus-spiske-965345.jpg">
-                    </a>
-                    <div class="is-inview project-card-content">
-                        <h3>project name</h3>
-                        <p><br>project details</p>
-                    </div>
-                </li>
-        </section>        
+        <section id="the_works" class="in-view_section">
+            <h1>featured works</h1>
+            <h2>designer | developer </h2>
+            <div class="works first-project">
+                <p>project name<span class="place">CA</span><br />
+                    <small>Justin will see you all tomorrow at 9am PT for standups.
+                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
+                        styling
+                        in.
+                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                        Have a great night and remember, indentations are so important, console.log everything, and errors are
+                        your
+                        friend(read
+                        them carefully)!</small>
+                </p>
+            </div>
+        
+            <div class="works second-project">
+                <p>project name<span class="place">CA</span><br />
+                    <small>Justin will see you all tomorrow at 9am PT for standups.
+                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
+                        styling
+                        in.
+                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                        Have a great night and remember, indentations are so important, console.log everything, and errors are
+                        your
+                        friend(read
+                        them carefully)!</small>
+                </p>
+            </div>
+        
+            <div class="works third-project">
+                <p>project name<span class="place">CA</span><br />
+                    <small>Justin will see you all tomorrow at 9am PT for standups.
+                        Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your
+                        styling
+                        in.
+                        We will hold the deployment lesson at 10am PT, it's much easier to deploy an MVP website!
+                        So cool to see your rough draft websites! Don't forget to celebrate the wins.
+                        Have a great night and remember, indentations are so important, console.log everything, and errors are
+                        your
+                        friend(read
+                        them carefully)!
+                    </small>
+                </p>
+            </div>
+        </section>
         
     </main> 
-
+    <script>
+        $('div').on('click', function () {
+            $(this).toggleClass('show-description');
+        });
+    </script>
     <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>

@@ -128,28 +128,116 @@ li a{
 }
 
 
-/* Project Section
------------------------------------- */
-#featured-work {
-    margin: auto;
+
+/* Featured Works 
+------------------------------------------------*/
+
+div.works {
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+    transition: filter .5s;
 }
-#project-list{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+
+.works:hover {
+    filter: grayscale(100%);
 }
-.project-card {
-    display: flex;
-    list-style: none;
-    align-items: center;
+
+#the_works h1 {
+    font-family: 'Cookie', cursive;
+    text-align: left;
+    font-size: 75px;
+    color: #f5f4e4;
+    margin: 60px 0 0 0;
 }
-ul{
-    padding: 0;
+
+#the_works h2 {
+    text-align: left;
+    color: #f5f4e4;
+    margin: 0px 0 70px 150px;
+    font-size: 15px;
 }
-li img{
-    max-width: 100%;
-    paddin
+
+#the_works p {
+    color: #f5f4e4;
+    background: black;
+    background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    padding: 10px;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 35px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+    cursor: pointer;
 }
-li a {
-    max-width: 25%;
+
+small {
+    font-size: 16px;
+    opacity: 0;
+}
+
+.show-description p {
+    height: 350px;
+}
+
+.show-description small {
+    opacity: 1;
+}
+
+.first-project {
+    background-image: url("pexels-btgl-â¡-3689659.jpg");
+}
+
+.second-project {
+    background-image: url("pexels-pixabay-355288.jpg");
+}
+
+.third-project {
+    background-image: url("pexels-suzy-hazelwood-1629236.jpg");
+}
+
+.place {
+    float: right;
+}
+
+@media (max-width: 1000px) {
+    #the_index {
+        flex-direction: column;
+        align-items: center;
+        transition: align-items 1s, flex-direction 1s;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 10px;
+        margin: 20px 0 30px 0;
+    }
+
+    div {
+        margin: 20px 12px 0 12px;
+    }
+
+    p {
+        font-size: 50px;
+        line-height: 44px;
+
+    }
+
+    small {
+        font-size: 16px;
+    }
 }
