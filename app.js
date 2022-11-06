@@ -1,22 +1,29 @@
-// Define Vars
-const sections = document.getElementsByTagName('section');
-const buttons = document.getElementsByTagName('button');
+// // Define Vars
+const body = document.querySelector('body');
+const theContact = document.getElementById('the_contact');
+const theWorks = document.getElementById('the_works');
+const theAbout = document.getElementById('the_about');
+const theIndex = document.getElementById('the_index');
+const button = document.getElementsByClassName('about-button');
+const workDivs = document.getElementsByClassName('works')
 
+// button.addEventListener('click', () => {
+//     document.theWorks.scrollTop(0)
+// })
 
-function onClickHandle(event) {
-	console.log(event);
-	const sectionsClassName = event.target.innerText.toLowerCase().replaceAll(' ', '-');
+// const onMouseOver = () => {
+//     let workDivs.
+// }
 
-	loop over all the sections
-	for (let i = 0; i < sections.length; i++) {
-		// check if the sections we're currently looping over has an id that matches the clicked button's text
-		if (sectionsClassName === sections[i].className) {
-			// if the sections's id matches the clicked button's text, make that sections visible.
-			sections[i].scrollTo()
-		} 
-	}
-}
+for(let i = 0; i< workDivs.length; i++) {
+    
+workDivs[i].addEventListener('mouseover', (event) => {
+    workDivs[i].style.width = '600px'
+    workDivs[i].style.height = '300px';
+});
 
-for (let i = 0; i < buttons.length; i++) {
-	buttons[i].addEventListener('click', onClickHandle);
+workDivs[i].addEventListener('mouseout', (event) => {
+    workDivs[i].style.width = '550px'
+    workDivs[i].style.height = '250px';
+});
 }
