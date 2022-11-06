@@ -1,29 +1,22 @@
-// const div = document.getElementsByClassName('works')
-// const showDes = document.getElementsByClassName('show-description')
-// // $('div').on('click', function () {
-// // 	$(this).toggleClass('show-description');
-// // });
-// const small = document.querySelectorAll('small');
-// const workP = document.querySelectorAll('#the_works p');
-// console.log(workP)
-// div.onclick = function () {
-// 	'small'.split(' ').forEach(function () {
-// 		this.classList.toggle('show-description');
-// 	});
-// };
-
-// workP.addEventListener('click', () => {
-//     'small'.split(' ').forEach(function (s) {
-//         showDes.classList.toggle(s);
-//     })
-// })
+// Define Vars
+const sections = document.getElementsByTagName('section');
+const buttons = document.getElementsByTagName('button');
 
 
-// const button = document.getElementsByClassName('button')
-// const description = document.getElementsByClassName('toggleable');
-//  const showDescription = () => {
-//     description.style.opacity = 1
-//     description.style.bottom = 0;
-//  }
+function onClickHandle(event) {
+	console.log(event);
+	const sectionsClassName = event.target.innerText.toLowerCase().replaceAll(' ', '-');
 
-//  button.addEventListener('click', showDescription)
+	loop over all the sections
+	for (let i = 0; i < sections.length; i++) {
+		// check if the sections we're currently looping over has an id that matches the clicked button's text
+		if (sectionsClassName === sections[i].className) {
+			// if the sections's id matches the clicked button's text, make that sections visible.
+			sections[i].scrollTo()
+		} 
+	}
+}
+
+for (let i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener('click', onClickHandle);
+}

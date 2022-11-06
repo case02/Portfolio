@@ -13,13 +13,16 @@
 </head>
 
 <body>
+    <div class="empty-header"></div>
     <header>
-       <nav class="navbar" >
-        <p class="header-name">CASEY STOCKER</p>
-        <button>about</button>
-        <button>works</button>
-        <button>contact</button>
-       </nav>
+        <div id="head">
+            <nav class="navbar">
+                <p class="header-name">CASEY STOCKER</p>
+                <button class="about-button">about</button>
+                <button class="works-button">works</button>
+                <button class="contact-button">contact</button>
+            </nav>
+        </div>
     </header>
     <section id="the_index" class="in-view_section">
         <div class="index-div typography">
@@ -28,14 +31,14 @@
         <div class="index-div brand-statement">
             <p><span class="space">//////////////////////////////</span>I AM A NEW DEVELOPER BASED OUT OF SAN DIEGO, CALIFORNIA.
                 I LOVE MINIMAL AND EFFIECENT DESIGN. I LOVE NATURE, READING AND ART.</p>
-            <button class="contact_button">CONTACT ME</button>
+            <button class="contact_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></button>
             </div>
     </section>
-    <section id="the_about" class="in-view_section">
+    <section id="the_about" class="in-view_section about">
+        <div class="about-left">
+            <img class="about-img hide-image" src="images/IMG_1234.jpg" >
+        </div>
         <article class="about-right">
-            <img class="about-img hide-image" src="images/IMG_1234.jpg" width="450">
-        </article>
-        <article class="about-left">
             <h2>Hi, I'm Casey<br><span class="name_bio">CASEY STOCKER</span></h2>
             <p class="about-bio">I am a
                 software engineer with experience working in a variety of industries; GPS and tracking services,
@@ -45,11 +48,11 @@
                 with a team or independently and am strong in task management skills.</p>
         </article>
     </section>
-    <section id="the_works" class="in-view_section">
+    <section id="the_works" class="in-view_section works">
         <h1>featured works</h1>
         <h2>designer | developer </h2>
         <div class="works first-project">
-            <p>project name<span class="place">CA</span><br />
+            <p class="project-description"><span class="project-name">project name</span><span class="place">CA</span><br />
                 <small>Justin will see you all tomorrow at 9am PT for standups.
                     Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
                     in.
@@ -62,7 +65,7 @@
         </div>
         
         <div class="works second-project">
-            <p>project name<span class="place">CA</span><br />
+            <p class="project-description"><span class="project-name">project name</span><span class="place">CA</span><br />
                 <small>Justin will see you all tomorrow at 9am PT for standups.
                     Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
                     in.
@@ -75,7 +78,7 @@
         </div>
         
         <div class="works third-project">
-            <p>project name<span class="place">CA</span><br />
+            <p class="project-description"><span class="project-name">project name</span><span class="place">CA</span><br />
                 <small>Justin will see you all tomorrow at 9am PT for standups.
                     Prioritize MVP for your project! functionality over fashion, you will have all weekend to dial your styling
                     in.
@@ -88,26 +91,23 @@
             </p>
         </div>
     </section>
-    <section id="the_contact" class="in-view_section">
-        <div class="footer-text">
-            <h1><span class="lets">LET'S</span><br><span class="connect">CONNECT</span></h1>
-        </div> 
-        <div class="contact-content">
-            <div class="conten-top">
-                <p>DO YOU HAVE A PROJECT IN MIND?</p>
-                <button class="contact_button">CONTACT ME</button>
-                <button class="resume_button">RESUME</button>
-            </div>
-            <div class="content-bottom">
-                <ul class="social">
-                    <li>GITHUB</li>
-                    <li>LINKEDIN</li>
-                    <li>TWITTER</li>
-                </ul>
-            </div>
+    <section id="the_contact" class="in-view_section contact">
+        <h1 class="connect">LET'S<br>CONNECT</h1>>
+        <div class="content-top">
+            <p class="reach-out">DO YOU HAVE A PROJECT IN MIND?</p>
+            <button class="contact_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></button>
+            <button class="resume_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">RESUME</a></button>
         </div>
-
     </section>
+    <footer class="bottom-page">
+        <div class="content-bottom">
+            <ul class="social">
+                <li><a href="https://github.com/case02">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/caseystocker/">LINKEDIN</a></li>
+                <li><a href="https://twitter.com/?lang=en">TWITTER</a></li>
+            </ul>
+        </div>
+    </footer>
     <script>
         $('div').on('click', function () {
             $(this).toggleClass('show-description');
@@ -115,3 +115,13 @@
     </script>
     <script type="text/javascript" src="app.js"></script>
 </body>
+
+<!-- <a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk"
+    class="btn--md--extra--border--animation--light" data-speed="3" role="button"
+    style="opacity: 1; transform: translate(0px, 0%);"><span>CONTACT ME</span>
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee--inner"><span>CONTACT ME</span> <span>CONTACT ME</span> <span>CONTACT ME</span>
+            <span>CONTACT ME</span><span>CONTACT ME</span> <span>CONTACT ME</span> <span>CONTACT ME</span> <span>CONTACT
+                ME</span></div>
+    </div>
+</a> -->
