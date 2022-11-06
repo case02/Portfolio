@@ -1,14 +1,22 @@
-// import LocomotiveScroll from 'locomotive-scroll';
+// Define Vars
+const sections = document.getElementsByTagName('section');
+const buttons = document.getElementsByTagName('button');
 
-// const scroll = new LocomotiveScroll({
-// 	el: document.querySelector('[data-scroll-container]'),
-// 	smooth: true,
-//     multiplier: 1,
-// });
 
-const aboutMeSection = document.querySelector('#about')
-const aboutButton = document.querySelector('.about')
-const worksButton = document.querySelector('.works')
-const contactButton = document.querySelector('.contact')
+function onClickHandle(event) {
+	console.log(event);
+	const sectionsClassName = event.target.innerText.toLowerCase().replaceAll(' ', '-');
 
-aboutButton.addEventListener('click', document.getElementById('about').scrollTo({behavior: 'smooth'}))
+	loop over all the sections
+	for (let i = 0; i < sections.length; i++) {
+		// check if the sections we're currently looping over has an id that matches the clicked button's text
+		if (sectionsClassName === sections[i].className) {
+			// if the sections's id matches the clicked button's text, make that sections visible.
+			sections[i].scrollTo()
+		} 
+	}
+}
+
+for (let i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener('click', onClickHandle);
+}
