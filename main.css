@@ -40,33 +40,38 @@ header {
     border-bottom: 1px solid #777;
     align-items: center;
     padding: 1.5rem 2.5rem;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(10px);
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-.header-name {
+
+/* .header-name {
     flex: 8;
     font-size: medium;
 }
 .header-name a{
     text-decoration: none;
     color: #f5f4e4;
-    font-size: xx-large;
-}
+    font-size: x-large;
+} */
 
-button {
-    background: transparent;
+.nav-links{
+    display: inline-block;
+    padding: 10px;
     border:none;
     font-size: medium;
     cursor: pointer;
+    list-style: none;
+    float: right;
 }
-button a{
+
+.nav-links a{
     color: #f5f4e4;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: large;
+}
+
+.header-name {
+    float: left;
 }
 
 /* Index Section
@@ -103,20 +108,13 @@ button a{
     visibility: hidden;
 }
 
-.contact_button, .resume_button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 30px;
-    float: right;
-    opacity: .7;
-    font-size: larger;
+.connect-list-item a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: x-large;
+    transition: font-size .5s;
 }
 
-.contact_button a {
-    color: white;
-    text-decoration: none;
-}
 /* about 
 ------------------------------------------------*/
 #the_about {
@@ -133,7 +131,6 @@ article {
     max-width: 600px;
     max-height: 600px;
     border-radius: 10px;
-    float: center;
     margin: auto;
     flex: 1;
 }
@@ -171,6 +168,7 @@ article {
     flex: 1;
     padding: 2rem;
     margin: 10rem auto;
+    width: 700px;
 }
 
 div.works {
@@ -280,8 +278,17 @@ small {
     opacity: 1;
 }
 
-.resume_button {
-    padding: 2px 20px;
+.connect-list-item {
+    font-size: x-large;
+    padding: 0 14px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 20px;  
+    display: inline-block;
+}
+
+.connect-list-item a:hover {
+    font-size: xx-large;
 }
 
 /* footer 
@@ -297,7 +304,6 @@ small {
 }
 
 footer{
-    display: relative;
     margin: auto;
 }
 footer li, footer li a {
@@ -314,8 +320,8 @@ footer li, footer li a {
     .header-name {
         font-size: x-large;
     }
-    button {
-        font-size: x-large;
+    li {
+        font-size: xx-large;
     }
     #the_index{
         flex-direction: column;
@@ -329,16 +335,16 @@ footer li, footer li a {
         margin-top: 5rem;
         width: 700px;
     }
-    #the_content {
+    #the_contact {
         flex-direction: column;
         align-items: center;
     }
     .connect {
-        margin-top: 50rem;
+        margin-top: 30rem;
+        width: 600;
     }
 
     .content-top {
-        margin-top: 70rem;
         margin: auto 2rem;
     }
 

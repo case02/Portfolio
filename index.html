@@ -6,37 +6,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Londrina+Shadow&display=swap" rel="stylesheet">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Henny+Penny&family=Lobster&family=Pacifico&family=Prompt&family=Raleway&display=swap');
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Henny+Penny&family=Lobster&family=Pacifico&family=Prompt&family=Raleway&display=swap');
+    </style>
     <link rel="stylesheet" href="main.css">
+    <titile>CASEY STOCKER</titile>
 </head>
 <body>
     <div class="empty-header"></div>
     <header>
         <div id="head">
             <nav class="navbar">
-                <p class="header-name"><a href="#the_index">CASEY STOCKER</a></p>
-                <button class="about-button"><a href="#the_about">about</a></button>
-                <button class="works-button"><a href="#the_works">works</a></button>
-                <button class="contact-button"><a href="#the_contact">contact</a></button>
+                <ul class="nav-list">
+                    <li class="nav-links header-name"><a href="#the_index">CASEY STOCKER</a></li>
+                    <li class="nav-links"><a href="#the_about">about</a></li>
+                    <li class="nav-links"><a href="#the_works">works</a></li>
+                    <li class="nav-links"><a href="#the_contact">contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
     <section id="the_index" class="in-view_section">
         <div class="index-div typography">
             <!-- <h1><span class="creative">creative<br></span>DESIGNER<span class="and"> &<br></span>DEVELOPER</h1> -->
-            <img class="graphic_text" src="images/ind_text.png">
+            <img class="graphic_text" src="images/ind_text.png" alt="says: creative designer and developer">
         </div>
         <div class="index-div brand-statement">
             <p><span class="space">//////////////////////////////</span>I AM A NEW DEVELOPER BASED OUT OF SAN DIEGO, CALIFORNIA.
                 I LOVE MINIMAL AND EFFIECENT DESIGN. I LOVE NATURE, READING AND ART.</p>
-            <button class="contact_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></button>
+            <nav class="connect-list">
+                <li class="connect-list-item"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a>
+                </li>
+            </nav>
             </div>
     </section>
     <section id="the_about" class="in-view_section about">
         <div class="about-left">
-            <img class="about-img hide-image" src="images/IMG_1234.jpg" >
+            <img class="about-img hide-image" src="images/IMG_1234.jpg" alt="profile image of Casey">
         </div>
         <article class="about-right">
             <h2>Hi, I'm Casey<br><span class="name_bio">CASEY STOCKER</span></h2>
@@ -93,12 +99,16 @@
     </section>
     <section id="the_contact" class="in-view_section contact">
         <div class="connect">
-            <img src="images/CONNECT.png" width="400px">
+            <img src="images/CONNECT.png" width="400" alt="image says the the words: let's connect">
         </div>
         <div class="content-top">
             <p class="reach-out">DO YOU HAVE A PROJECT IN MIND?</p>
-            <button class="contact_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></button>
-            <button class="resume_button"><a href="resume_pdf/resume_c.stocker_22rh.pdf">RESUME</a></button>
+            <ul class="connect-list">
+                <li class="connect-list-item"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></li>
+                <li class="connect-list-item resume"><a href="resume_pdf/resume_c.stocker_22rh.pdf">RESUME</a></li>
+            </ul>
+            <!-- <button class="contact_button"><a href="mailto:cstocker0212@gmail.com?subject=🤝%20Project%20info.%20Let's%20talk">CONTACT ME</a></button>
+            <button class="resume_button"><a href="resume_pdf/resume_c.stocker_22rh.pdf">RESUME</a></button> -->
         </div>
     </section>
     <footer class="bottom-page">
