@@ -7,14 +7,7 @@ const theIndex = document.getElementById('the_index');
 const button = document.getElementsByClassName('about-button');
 const workDivs = document.getElementsByClassName('works')
 
-// button.addEventListener('click', () => {
-//     document.theWorks.scrollTop(0)
-// })
-
-// const onMouseOver = () => {
-//     let workDivs.
-// }
-
+//mouse over event for works divs
 for(let i = 0; i< workDivs.length; i++) {
     
 workDivs[i].addEventListener('mouseover', (event) => {
