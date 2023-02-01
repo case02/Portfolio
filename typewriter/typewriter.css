@@ -1,0 +1,50 @@
+#type, #blinker {
+  color: rgb(218, 216, 216);
+  font-size: 2em;
+  font-family: "Saira Semi Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.text-center {
+  text-align: left;
+}
+
+#type {
+  display: inline-block;
+}
+
+#blinker {
+  background: #f857a8;
+  background: linear-gradient(45deg, #f857a8, #ff5858);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#blinker.blink {
+  -webkit-animation-name: type;
+          animation-name: type;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=typewriter.css.map */
