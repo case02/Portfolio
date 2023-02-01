@@ -1,0 +1,59 @@
+$color-primary: #f857a8;
+$color-secondary: #ff5858;
+$color-dark: rgb(218, 216, 216);
+
+@mixin main-gradient {
+    background: $color-primary;
+    background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary);
+    background: linear-gradient(45deg, $color-primary, $color-secondary);
+}
+
+// body {
+//     background: repeating-linear-gradient(45deg, rgba(255, 255, 255, .05) 0px, rgba(255, 255, 255, .05) 2px, rgba(0, 0, 0, .025) 2px, rgba(0, 0, 0, .025) 4px);
+//     background-attachment: fixed;
+//     background-size: cover;
+//     min-height: 100%;
+// }
+
+#type, #blinker {
+    // line-height: 100vh;
+    color: $color-dark;
+    font-size: 2em;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.text-center {
+    text-align: left;
+}
+
+#type {
+    // text-shadow: 2px 2px #ddd;
+    display: inline-block;
+}
+
+#blinker {
+    @include main-gradient;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &.blink {
+        animation-name: type;
+        animation-duration: .75s;
+        animation-iteration-count: infinite;
+    }
+
+}
+
+@keyframes type {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
